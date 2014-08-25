@@ -11,11 +11,11 @@ export default Ember.Route.extend({
     },
     newPost: function(post) {
       var route = this;
-      var post = this.store.createRecord('post', {
+      var newPost = this.store.createRecord('post', {
         title: post.title,
         body: post.body
       });
-      post.save().then(function() {
+      newPost.save().then(function() {
         route.transitionTo('posts');
       });
     }

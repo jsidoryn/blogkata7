@@ -4,5 +4,15 @@
   {{body}}
 </p>
 
+<h4>Comments</h4>
+
+<ul>
+  {{#each comment in comments}}
+    <li>Comment: {{comment.comment}}</li>
+  {{/each}}
+</ul>
+
+
+{{#link-to 'post.comments.new'}} Add a new comment {{/link-to}}
 
 {{outlet}}
