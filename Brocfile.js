@@ -19,6 +19,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import("vendor/ember-localstorage-adapter/localstorage_adapter.js");
+
 var bootstrapDir = 'vendor/bootstrap-sass-official/assets';
 
 // select bootstrap JavaScript components to include
