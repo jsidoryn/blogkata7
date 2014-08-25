@@ -3,7 +3,9 @@
 <ul>
 	{{#each}}
 		<li>
-    {{#link-to 'post' this}} {{title}} {{/link-to}} ({{#link-to 'post.edit' this}}Edit{{/link-to}} | <a {{action 'deletePost' this}}>Delete</a>)
+	    {{#link-to 'post' this}} {{title}} {{/link-to}}
+			({{#link-to 'posts.edit' this.id}}Edit{{/link-to}} |
+			<a {{action 'deletePost' this}}>Delete</a>)
 		</li>
 	{{/each}}
 </ul>
