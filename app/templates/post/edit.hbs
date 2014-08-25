@@ -1,0 +1,13 @@
+<h3>Edit</h3>
+
+<p>
+    Title: <br>
+    {{input value=title}}
+</p>
+
+<p>
+  Body:<br>
+  {{textarea value=body}}
+</p>
+
+<button {{action 'editPost' this}}>Submit</button>
