@@ -10,7 +10,8 @@ export default Ember.ObjectController.extend({
         comment: this.get('comment'),
         post: this.get('post')
       });
-      newPost.save().then(function() {
+      newPost.save().then(function(data) {
+        controller.get('post.comments').pushObject(data)
         controller.set('comment', '')
       });
     }
