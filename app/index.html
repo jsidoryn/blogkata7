@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blogkata7</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/blogkata7.css">
+  </head>
+  <body>
+    <script>
+      window.Blogkata7ENV = {{ENV}};
+      window.EmberENV = window.Blogkata7ENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/blogkata7.js"></script>
+    <script>
+      window.Blogkata7 = require('blogkata7/app')['default'].create(Blogkata7ENV.APP);
+    </script>
+  </body>
+</html>
